@@ -16,25 +16,22 @@
     display: flex;
     align-items: center;
     gap: 100px;
-   
     height: 50px;
     font-size: 25px;
     padding-left: 450px;
     
    }
 
-   .Navbar{
-    
+   .Navbar{ 
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 20px;
     display: flex;
     height: 50px;
-    gap:750px;
+    justify-content: space-between;
     font-size: 18px;
     position: sticky;
     background-color: white;
-
    }
    .Navbar__left{
     font-weight:900;
@@ -47,14 +44,24 @@
     cursor: pointer;
     text-decoration: underline;
    }
-   .sidenav{
-    background-color: #1D232C;
-    color: white;
-    width: 50%;
-    height: 100vh;
-    display: fixed;
-    top: 0;
-   }
+
+   .menuitems{
+    margin-left: 0px;
+    margin-top: 10px;
+    padding: 20px;
+     width:800px;
+     height: 500px;
+     background-color:#1D232C;
+     color:white;
+     display: flex;
+    
+}
+.menus p{
+    font-weight: bolder;
+    margin-left: 30px;
+    padding-left: 30px;
+    padding-bottom: 80px;
+}
 
    .Slide-container{
      border: solid black 3px;
@@ -63,9 +70,10 @@
     margin-left: 20px;
     margin-right: 20px;
     display: flex;
-
+     
    }
    .slides{
+   
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -80,6 +88,7 @@
    .slides img:not(.active){
     top:0;
     left:-100%;
+   
    }
    span.next, span.prev{
     position: absolute;
@@ -90,16 +99,19 @@
     transition: 0.5s;
     border-radius: 3px;
     cursor: pointer;
-    z-index: 1;
+   
     font-size: 100px;
+    
    }
    span.next{
    top:250px;
     right: 90px;
+    
    }
    span.prev{
     left:150px;
     top:250px;
+   
    }
 
   @keyframes next1{
@@ -405,9 +417,9 @@
     color:white;
     font-size: 25px;
     text-align: left;
-    
-
 }
+
+
 .footer-icons{
     display: flex;
     gap: 40px;
@@ -430,4 +442,22 @@
  #sign{
     display:none;
  }
+ 
+.Navbar__right{
+    display: none;
+}
+.menuitems{
+        display: none;
+    }
+}
+
+@media screen and (min-width:800px){
+
+    #menuicon{
+        display: none;
+    }
+    .menuitems{
+        display: none;
+    }
+    
 }

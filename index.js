@@ -42,3 +42,11 @@
     // navigation .addEventListener("click",function(){
     //     brand__home__nav.style.animation = "ease-in";
     //  })
+
+    var menuicon = document.getElementById("menuicon")
+     var menulist = document.querySelector(".menuitems")
+     var slide =document.querySelector(".Slide-container")
+     menuicon.addEventListener("click",function(){
+        menulist.style.display ="block"
+        slide.style.display ="none"
+     })
